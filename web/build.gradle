@@ -13,6 +13,7 @@ dependencies {
             // Spring Framework
             [group: 'org.springframework', name: 'spring-web', version: springWebVersion],
             [group: 'org.springframework', name: 'spring-webmvc', version: springWebVersion],
+            project(':core')
     )
 
     providedCompile(
