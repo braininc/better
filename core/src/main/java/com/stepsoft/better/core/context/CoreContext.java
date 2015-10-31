@@ -14,8 +14,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
-import static com.stepsoft.better.core.context.util.ContextConstants.MAIL_SMTP_AUTH;
-import static com.stepsoft.better.core.context.util.ContextConstants.MAIL_SMTP_STARTTLS_ENABLED;
+import static com.stepsoft.better.core.util.CoreContextConstants.MAIL_SMTP_AUTH;
+import static com.stepsoft.better.core.util.CoreContextConstants.MAIL_SMTP_STARTTLS_ENABLED;
 
 /**
  * @author Eugene Stepanenkov

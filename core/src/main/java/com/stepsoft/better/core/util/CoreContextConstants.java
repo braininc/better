@@ -1,9 +1,9 @@
-package com.stepsoft.better.core.context.util;
+package com.stepsoft.better.core.util;
 
 /**
  * @author Eugene Stepanenkov
  */
-public class ContextConstants {
+public class CoreContextConstants {
 
     // Others
     public static final String MAIL_SMTP_AUTH = "mail.smtp.auth";
