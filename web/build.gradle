@@ -1,0 +1,23 @@
+apply plugin: 'war'
+
+ext {
+
+    servletVersion = '3.1.0'
+    springWebVersion = '4.2.1.RELEASE'
+}
+
+dependencies {
+
+    compile(
+
+            // Spring Framework
+            [group: 'org.springframework', name: 'spring-web', version: springWebVersion],
+            [group: 'org.springframework', name: 'spring-webmvc', version: springWebVersion],
+    )
+
+    providedCompile(
+
+            // Servlet API
+            [group: 'javax.servlet', name: 'javax.servlet-api', version: servletVersion]
+    )
+}

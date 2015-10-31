@@ -1,0 +1,63 @@
+group 'com.stepsoft'
+version '1.0-SNAPSHOT'
+
+subprojects {
+
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    ext {
+
+        jacksonVersion = '2.6.2'
+        springVersion = '4.2.1.RELEASE'
+        commonsCollectionsVersion = '4.0'
+        commonsVersion = '3.4'
+        log4jVersion = '2.4'
+        mailApiVersion = '1.5.4'
+        jUnitVersion = '4.12'
+        mockitoVersion = '1.10.19'
+        assertjVersion = '3.2.0'
+    }
+
+    dependencies {
+
+        compile(
+
+                // Jackson
+                [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jacksonVersion],
+                [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion],
+                [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: jacksonVersion],
+
+                // Spring Framework
+                [group: 'org.springframework', name: 'spring-core', version: springVersion],
+                [group: 'org.springframework', name: 'spring-context-support', version: springVersion],
+
+                // Apache Commons Collections
+                [group: 'org.apache.commons', name: 'commons-collections4', version: commonsCollectionsVersion],
+                [group: 'org.apache.commons', name: 'commons-lang3', version: commonsVersion],
+
+                // Apache log4j
+                [group: 'org.apache.logging.log4j', name: 'log4j', version: log4jVersion],
+
+                // Java Mail API
+                [group: 'javax.mail', name: 'javax.mail-api', version: mailApiVersion]
+        )
+
+        testCompile(
+
+                // JUnit
+                [group: 'junit', name: 'junit', version: jUnitVersion],
+
+                // Mockito
+                [group: 'org.mockito', name: 'mockito-all', version: mockitoVersion],
+
+                // AssertJ
+                [group: 'org.assertj', name: 'assertj-core', version: assertjVersion]
+        )
+    }
+}

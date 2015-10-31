@@ -1,0 +1,13 @@
+.gradle/
+.idea/
+build/
+core/build
+web/build
+gradle/
+out/
+
+*.iml
+*.ipr
+*.iws
+gradlew
+gradlew.bat
