@@ -1,4 +1,4 @@
-group 'com.stepsoft'
+group 'com.stepsoft.better'
 version '1.0-SNAPSHOT'
 
 subprojects {

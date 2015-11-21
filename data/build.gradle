@@ -1,0 +1,22 @@
+ext {
+
+    hibernateVersion = '5.0.1.Final'
+    mySqlVersion = '5.1.36'
+}
+
+dependencies {
+
+    compile(
+
+            // Hibernate
+            [group: 'org.hibernate', name: 'hibernate-core', version: hibernateVersion],
+            [group: 'org.hibernate', name: 'hibernate-entitymanager', version: hibernateVersion],
+    )
+
+
+    runtime(
+
+            // MySql Connector
+            [group: 'mysql', name: 'mysql-connector-java', version: mySqlVersion]
+    )
+}
