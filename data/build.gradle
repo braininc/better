@@ -11,8 +11,8 @@ dependencies {
             // Hibernate
             [group: 'org.hibernate', name: 'hibernate-core', version: hibernateVersion],
             [group: 'org.hibernate', name: 'hibernate-entitymanager', version: hibernateVersion],
+            [group: 'org.springframework', name: 'spring-orm', version: springVersion]
     )
-
 
     runtime(
 

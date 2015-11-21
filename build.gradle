@@ -36,6 +36,7 @@ subprojects {
                 // Spring Framework
                 [group: 'org.springframework', name: 'spring-core', version: springVersion],
                 [group: 'org.springframework', name: 'spring-context-support', version: springVersion],
+                [group: 'org.springframework', name: 'spring-tx', version: springVersion],
 
                 // Apache Commons Collections
                 [group: 'org.apache.commons', name: 'commons-collections4', version: commonsCollectionsVersion],
